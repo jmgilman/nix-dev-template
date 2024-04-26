@@ -1,5 +1,32 @@
 # Changelog
 
+## [3.1.0](https://github.com/nix-community/nixago/compare/v3.0.0...v3.1.0) (2024-04-25)
+
+
+### Features
+
+* add colors to nixago logs ([#48](https://github.com/nix-community/nixago/issues/48)) ([8c1f9e5](https://github.com/nix-community/nixago/commit/8c1f9e5f1578d4b2ea989f618588d62a335083c3))
+* allow extra attributes that are transparently passed through ([#32](https://github.com/nix-community/nixago/issues/32)) ([59843d3](https://github.com/nix-community/nixago/commit/59843d34e6f369b65589dda00d2efe5d5164ce39))
+* automatically add linked files to gitignore ([#43](https://github.com/nix-community/nixago/issues/43)) ([e157f2e](https://github.com/nix-community/nixago/commit/e157f2e78e0fcc00c3446c71b90944cdb2677316)), closes [#27](https://github.com/nix-community/nixago/issues/27)
+* factorize shell scripts so that they can be composed more freely ([#40](https://github.com/nix-community/nixago/issues/40)) ([dd3c333](https://github.com/nix-community/nixago/commit/dd3c333e5cb6a81feb902e9eaa3cdbc2dc6da2c4))
+* locate the request file, if possible ([#30](https://github.com/nix-community/nixago/issues/30)) ([f904f54](https://github.com/nix-community/nixago/commit/f904f54eb5b60414d6411d0d43eb33360b707e88))
+* provide a stand-alone installation runnable for every hook ([#41](https://github.com/nix-community/nixago/issues/41)) ([8aa25d6](https://github.com/nix-community/nixago/commit/8aa25d69cb0c78c9ab7b72ef6291a093cf481218))
+* reify requests ([#42](https://github.com/nix-community/nixago/issues/42)) ([1c8f4b3](https://github.com/nix-community/nixago/commit/1c8f4b38e5aa6348600747db9109baba3d7c0b95))
+* **request:** default format value to file extension ([#37](https://github.com/nix-community/nixago/issues/37)) ([c893573](https://github.com/nix-community/nixago/commit/c893573b94c0c76b2a701c811ceceaaa10f1d4c6)), closes [#28](https://github.com/nix-community/nixago/issues/28)
+
+
+### Bug Fixes
+
+* 1000 nixpkgs; compat with numtide/nixpkgs-unfree ([#51](https://github.com/nix-community/nixago/issues/51)) ([d686345](https://github.com/nix-community/nixago/commit/d68634526733c79a2ca4fcc87c25a1ceabf132f4))
+* **core:** recover the unbound freeformType contract per module system ([#34](https://github.com/nix-community/nixago/issues/34)) ([1640dd9](https://github.com/nix-community/nixago/commit/1640dd9bc8246b5ef23664b5160a1b7a5b4cf57c))
+* don't leave traces in the hook's environment ([#46](https://github.com/nix-community/nixago/issues/46)) ([21272c3](https://github.com/nix-community/nixago/commit/21272c35589c3460ae1515b59c69a8e356baab02)), closes [#45](https://github.com/nix-community/nixago/issues/45)
+* ensure gitignore entries are relative to root ([#54](https://github.com/nix-community/nixago/issues/54)) ([1da60ad](https://github.com/nix-community/nixago/commit/1da60ad9412135f9ed7a004669fdcf3d378ec630))
+* **hook:** creates relative paths before linking/copying ([#36](https://github.com/nix-community/nixago/issues/36)) ([0fb7666](https://github.com/nix-community/nixago/commit/0fb76662c652c4b6668c73c357330d7457bc2ffe)), closes [#33](https://github.com/nix-community/nixago/issues/33)
+* Only update .gitignore when a link is indeed created ([#56](https://github.com/nix-community/nixago/issues/56)) ([5133633](https://github.com/nix-community/nixago/commit/5133633e9fe6b144c8e00e3b212cdbd5a173b63d))
+* run extra in subshell so that the environment is not messed up ([#44](https://github.com/nix-community/nixago/issues/44)) ([608abdd](https://github.com/nix-community/nixago/commit/608abdd0fe6729d1f7244e03f1a7f8a5d6408898))
+* the quickstart guide ([#35](https://github.com/nix-community/nixago/issues/35)) ([3a5cb34](https://github.com/nix-community/nixago/commit/3a5cb3439fbeccafa1cb960435ba01800a7438db))
+* unbound variable ([#55](https://github.com/nix-community/nixago/issues/55)) ([dacceb1](https://github.com/nix-community/nixago/commit/dacceb10cace103b3e66552ec9719fa0d33c0dc9))
+
 ## [3.0.0](https://github.com/nix-community/nixago/compare/v2.1.0...v3.0.0) (2022-06-17)
 
 
