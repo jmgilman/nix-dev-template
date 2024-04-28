@@ -1,12 +1,12 @@
 ''
   debug() {
     if [[ ''${NIXAGO_DEBUG-0} -gt 0 ]]; then
-      printf "(DEBUG) nixago: %s\n" "''${*}"
+      printf "(DEBUG) nixago: %s\n" "''${*}" >&2
     fi
   }
 
   error() {
-    printf "!!! nixago: ERROR %s\n" "''${*}"
+    printf "!!! nixago: ERROR %s\n" "''${*}" >&2
   }
 
   log() {
@@ -47,6 +47,6 @@
   fi
 
   if [[ -n $nixago_log_format ]]; then
-    printf "nixago: updating repository files\n"
+    printf "nixago: updating repository files\n" >&2
   fi
 ''
