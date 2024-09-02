@@ -35,7 +35,7 @@ Add Nixago as an input to your `flake.nix`:
   inputs = {
     # ...
     nixpkgs.url = "github:nixos/nixpkgs";
-    nixago.url = "github:jmgilman/nixago";
+    nixago.url = "github:nix-community/nixago";
     nixago.inputs.nixpkgs.follows = "nixpkgs";
     # ...
   };
